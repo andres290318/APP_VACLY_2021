@@ -1,7 +1,7 @@
 //funcion para pasar de pagina "solo se activa cuando se llena el formulario"
 //usuario
 function timeUser() {
-  window.open("indiceUsuario.html",'_top')
+  window.open("introduccion1.html",'_top')
 }
 
 function timeAdmit() {
