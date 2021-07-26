@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 9999;
+	
+}
+
+header{
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+    background-color: rgba(118, 118, 118, 0.71);
+	
+}
+
+#btn-menu{
+	display: none;
+
+}
+
+header label{
+	width: 60px;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 30px;
+	transition: all 500ms ease;
+	display: none!important;
+	cursor: pointer;
+	
+	
+}
+
+header label:hover{
+	background-color: rgba(0,0,0,0.3);
+
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding-top:5px ;
+	display: flex;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	height:100%;
+	padding: 15px 20px;
+	transition: all 500ms ease;
+}
+
+.menu li a:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+
+
+.menu ul .usuario > img{
+	display:block;
+	height: 60px; 
+	border-radius:50%; 
+}
+.menu ul .usuario{
+	background-color:rgba(0, 0, 0, 0.02);
+	display:flex;
+	margin-left: 1em;
+	
+}
+
+.menu ul .datos{
+	display: flex;
+	
+	
+}
+
+/* responsive */
+@media (max-width:1024px){
+
+	header label{
+		display: block!important;
+		
+        
+	}
+
+	.menu{
+		position: fixed;
+		background-color: rgba(118, 118, 118, 0.94);
+		width: 50%;
+		height: 100%;
+		margin-left: -100%;
+		transition: all 900ms ease;
+	}
+    
+    
+	.menu ul{
+		flex-direction: column;
+		border-top: 1px solid #fffa;
+		height:100%;
+	
+	}
+
+	.menu ul .datos{
+        border-top:1px solid #fff;
+		flex-direction: column;
+		height:60%;
+		justify-content: flex-end;
+    }
+
+	
+/* boton label */
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+
+	}
+
+	.menu ul .usuario{
+		height:10em; 
+		background-color:rgba(0, 0, 0, 0.02);
+		padding-top: 50px;
+		margin: 0;
+		border-bottom:1px solid #ffff;
+	}
+
+
+	.menu ul .usuario>a{
+		height:50px;
+		
+		
+
+	}
+
+	.menu ul .usuario>a:hover{
+	border-bottom: 1px solid #ffff;
+		
+
+	}
+
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="assets/css/estilos_indiceAdministrador.css">
+    <link rel="stylesheet" href="assets/css/estilos_navbar.css">
+    <link rel="stylesheet" href="assets/css/estilos_barraNavegacion.css">
+    <!-- animation.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- ESTILOS CSS -->
+
+    <title>Indice</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-menu fas fa-bars"></label>
+
+        <nav class="menu">
+            <ul>
+                <li class="usuario">
+                    <!-- <img src="https://i.pinimg.com/236x/d2/28/71/d22871b6c9e94e1d973663bbe1d0b276.jpg" alt="img_usuario"> -->
+                    <a href="#">USUARIO</a>
+                </li>
+                
+                <li> <a href="../indice/indice.php">INICIO</a></li>
+                <div class="datos">
+                    <!-- <li  ><a href="#">ACTUALIZAR DATOS</a></li> -->
+                <li> <a href="loginUsuario.php">CERRAR SESIÓN</a> </li>
+            </div>
+            </ul>
+        </nav>
+    </header>
+     <!-- navbar -->
+    <!-- INICIO CONTENEDOR PADRE -->
+    <div class="container animate__animated animate__bounceIn">
+        <div class="container__img">
+            <img src="assets/img/Img_logo.png" alt="logo_vacly">
+        </div>
+        <!-- INICIO CONTENEDOR BOTONES -->
+        
+        <a href="construccion.html"><div class="container__button">   
+            <div class="container__button--img">
+                <img src="assets/img/IconSintomas.png" alt="IMG_sintomas">
+            </div>
+            
+            <p>SISTOMAS MAS COMUNES</p>  
+        </div>
+        </a>
+         
+      
+
+        <a href="construccion.html"> 
+            <div class="container__button">
+            <div class="container__button--img">
+                <img src="assets/img/iconJeringa.png" alt="IMG-personas_vacunadas">
+            </div>
+            <p>PERSONAS VACUNADAS</p>
+        </div>
+        </a>
+        <a href="tip1.html"><div class="container__button">
+           <div class="container__button--img">
+                <img src="assets/img/iconTips.png" alt="IMG_Mis_Estadisticas">
+            </div> 
+            <p>TIPS</p>
+        </div>
+        </a>
+   
+    <!-- FIN CONTENEDOR PADRE -->
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/9dbdcbb288.js" crossorigin="anonymous"></script>
+
+</html>

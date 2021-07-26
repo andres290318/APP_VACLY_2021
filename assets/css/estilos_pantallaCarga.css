@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    height: 30em;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container__div--img{
+    width:30%;
+    margin-top:5em;
+    margin-right:1em; 
+    
+}
+
+.container__div--img img{
+    width: 100%;
+
+    
+}
+
+/* loader */
+
+.containerLoader {
+    display:flex;
+    width:100%;
+    height: 13vh;
+    justify-content: center;
+    align-items:center;
+
+    
+
+
+}
+.loader,
+.loader::before,
+.loader::after {
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    animation:loader 1.5s infinite ease-in-out;
+
+    
+
+}
+
+.loader{
+    color:rgb(88, 88, 88);
+    font-size:13px;
+    position:relative;
+    animation-delay: -0.16s;
+
+
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+  
+  
+
+}
+.loader:before{
+    left: -3.5em;
+    animation-delay: -0.32s;
+
+}
+
+.loader:after{
+    left: 3.5em;
+} 
+
+/* creamos animacion */
+ @keyframes loader{
+    0%,
+    80%,
+    100%{
+        box-shadow:0 2.5em 0 -1.3em;
+
+    }
+    40%{
+        box-shadow:0 2.5em 0 0;
+    }
+} 
+
+
+
+
+/* responsive */
+@media (max-width: 890px){
+    .container__div--img{
+        width:90%;
+         
+        
+    }
+}
+
+
+
+
+
+
