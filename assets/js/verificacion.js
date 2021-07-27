@@ -13,7 +13,7 @@ function validar(){
     let pass=document.getElementById("passWordAdmit").value;
 
     //validamos
-    if(email=="root" && pass=="Root"){
+    if(email=="UserRoot" && pass=="UserRoot"){
         swal({
             title: "Bienvenido!",
             text: "Usuario correcto!",
@@ -50,10 +50,10 @@ function validarUsuario(){
   let vacunas = document.getElementById("vacunas").value;
   
   //verificamos que los campos esten llenos 
-  if (email=="" || nombre=="" || edad=="" || comuna=="" || vacunas==""){
+  if (email=="" || nombre=="" || edad=="" || comuna=="" || vacunas!="Vacuna"){
     swal({
       title: "Error!",
-      text: "Verifica si los Campos estan llenos y vuelve a intentarlo.!",
+      text: "Verifica que todos los Campos esten llenos y vuelve a intentarlo!",
       icon: "warning",
       button: "Ok",
     });
