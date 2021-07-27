@@ -50,13 +50,14 @@ function validarUsuario(){
   let vacunas = document.getElementById("vacunas").value;
   
   //verificamos que los campos esten llenos 
-  if (email=="" || nombre=="" || edad=="" || comuna=="" || vacunas!="Vacuna"){
+  if (email=="" || nombre=="" || edad=="" || comuna=="" || vacunas=="Vacuna"){
     swal({
       title: "Error!",
       text: "Verifica que todos los Campos esten llenos y vuelve a intentarlo!",
       icon: "warning",
       button: "Ok",
     });
+    
    
     
   } 
