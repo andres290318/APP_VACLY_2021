@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calendario{
+    width: 270px;
+    height: 250px;
+}
+.month{
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.days{
+    height:10%;
+}
+#dia_del_calendario{
+    height: 50%;
+}
+.prev{
+    margin-right: auto;
+    align-self: center;
+    font-size: 30px;
+}
+.next{
+    align-self: center;
+    margin-left: auto;
+    font-size: 30px;
+}
+.date{
+    align-self: center;
+    justify-content: center;
+}
+
+.year{
+    align-self: center;
+    margin-left: 5px;
+}
+.days ,.dia_del_calendario{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 5px;
+}

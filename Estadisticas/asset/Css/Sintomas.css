@@ -1,0 +1,145 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+#background{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+#Icon{
+    width:50px ;
+    height:50px ;
+}
+
+#title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Bars{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+#Bone-pain{
+    display: flex;
+    flex-direction: row;
+}
+#headache{
+    display: flex;
+    flex-direction: row;
+}
+#malestar{
+    display: flex;
+    flex-direction: row;
+}
+#insomia{
+    display: flex;
+    flex-direction: row;
+}
+
+#Sub-Bone-pain{
+    display: flex;
+    background-color: #D8DDE3;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#Sub-headache{
+    display: flex;
+    background-color: #4C545D;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#Sub-malestar{
+    display: flex;
+    background-color: #B9BABB;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#Sub-insomia{
+    display: flex;
+    background-color: #686C71;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+#select-vaccine{
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
+
+#right-2{
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    font-size: 45px;
+}
+
+#left-2{
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    font-size: 45px;
+}
+
+#monitor-2{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-image: url("../Img/");
+    width: 230px;
+    height: 50px;
+    background-color: #CDD3D9;
+    border-radius: 15px;
+}
+p{
+    align-self: center;
+    justify-self: center;
+}
+#text{
+    text-decoration: black;
+    width: 100%;
+    height: 100%;
+    background-color: #CDD3D9;
+    border-radius: 15px;
+    border:none;
+    display: flex;
+    text-align-last: center;
+}
+#cajadetexto{
+    width: 275px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: white;
+    align-self: center;
+
+}
+#text::placeholder{
+    align-self: center;
+}
+#date{
+    width: 40px;
+    height: 40px;
+}
+hr{
+    background-color:#4C545D ;
+    height: 5px;
+    width: 100%;
+}
+
+

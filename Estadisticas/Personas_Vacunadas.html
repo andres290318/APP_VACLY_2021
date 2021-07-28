@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/Css/personas.css">
+    <link rel="Icon" href="asset/Img/Icon Jeringa.png">
+    <link rel="stylesheet" href="asset/Css/estilos_navbar.css">
+    <link rel="stylesheet" href="asset/Css/calenadario.css">
+    <title>Personas Vacunadas</title>
+</head>
+<body id="background">
+    <!--inicio de barra-->
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-menu fas fa-bars"></label>
+
+        <nav class="menu">
+            <ul>
+                <li class="usuario">
+                    <!-- <img src="https://i.pinimg.com/236x/d2/28/71/d22871b6c9e94e1d973663bbe1d0b276.jpg" alt="img_usuario"> -->
+                    <a href="#">USUARIO</a>
+                </li>
+                
+                <li> <a href="../indiceAdministrador.html">INICIO</a></li>
+            <div class="info">
+                <div class="dato">
+                    <div id="fe"></div>
+                    <li> <a href="#">Sinovac</a> </li>
+                </div>
+                <div class="dato">
+                    <div id="mr"></div>
+                    <li> <a href="#">Pfizer</a> </li>
+                </div>
+                <div class="dato">
+                    <div id="ga"></div>
+                    <li> <a href="#">Moderna</a> </li>
+                </div>
+                <div class="dato">
+                    <div id="da"></div>
+                    <li> <a href="#">BioNTench</a> </li>
+                </div>
+            </div>
+                
+            </ul>
+        </nav>
+    </header>
+<!--fin de barra-->
+<br>
+    <div id="title">
+            <img src="asset/Img/Icon Jeringa.png" alt="Sintomas" id="Icon">
+            Personas Vacunadas
+         <!-- <p id="Number-indicador#0"></p> -->
+    </div>
+    <br>
+    <div id="Bars">
+        <div id="Bone-pain">
+            <div id="Sub-Bone-pain"width="150px"height="25px">
+
+            </div>
+            <P id="Number-indicador#1">32433</P>
+        </div>
+        
+        <div id="headache">
+            <div id="Sub-headache"width="150px"height="25px">
+                
+            </div>
+            <P id="Number-indicador#2">35353</P>
+        </div>
+
+        <div id="malestar">
+            <div id="Sub-malestar"width="150px"height="25px">
+
+            </div>
+            <P id="Number-indicador#3">32433</P>
+        </div>
+        
+        <div id="insomia">
+            <div id="Sub-insomia"width="150px"height="25px">
+                
+            </div>
+            <P id="Number-indicador#4">35353</P>
+        </div>
+    </div>
+    <hr id="hr">
+    <br>
+        <div id="cajadetexto">
+            <input type="text" id="text" placeholder="YYYY-MM-DD">
+        </div>
+        <br>
+        <div class="calendario" id="img">
+            <header>
+                <div class="month">
+                    <div class="prev">
+                        <i class="fas fa-angle-left" id="prev" ></i>
+                    </div>
+                    <h1 id="mes"></h1>
+                    <div class="year" id="year">
+                        
+                    </div>
+                    <div class="next">
+                        <i class="fas fa-angle-right" id="next"></i>
+                    </div>  
+            </header>
+            <div class="days" id="days">
+                <div class="calendario_day calendar_item">lun</div>
+                <div class="calendario_day calendar_item" >mar</div>
+                <div class="calendario_day calendar_item">mir</div>
+                <div class="calendario_day calendar_item">jue</div>
+                <div class="calendario_day calendar_item">vie</div>
+                <div class="calendario_day calendar_item">sab</div>
+                <div class="calendario_day calendar_item">dom</div>
+            </div>
+            <div id="dia_del_calendario" class="dia_del_calendario"></div>
+            </div>
+        </div>
+        <br>
+        <div id="select-vaccine">
+            <button id="right-2"><i class="fas fa-angle-left"></i></button>
+            <div id="monitor-2"><p id="sub_monitor_2">Selecciona un rango de edad</p></div>
+            <button id="left-2"><i class="fas fa-angle-right"></i></button>
+        </div> 
+        <script src="asset/Js/calendario.js"></script>   
+        <script src="https://kit.fontawesome.com/9dbdcbb288.js" crossorigin="anonymous"></script>
+        <script src="asset/Js/Personas.js"></script> 
+</body>
+</html>
