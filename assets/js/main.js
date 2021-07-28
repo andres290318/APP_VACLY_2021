@@ -50,7 +50,7 @@ function validarUsuario(){
   let vacunas = document.getElementById("vacunas").value;
   
   //verificamos que los campos esten llenos 
-  if (email=="" || nombre=="" || edad=="" || comuna=="" || vacunas=="Vacuna"){
+  if (email=="" || nombre=="" || edad=="" || comuna=="Comuna" || vacunas=="Vacuna"){
     swal({
       title: "Error!",
       text: "Verifica que todos los Campos esten llenos y vuelve a intentarlo!",
@@ -71,4 +71,14 @@ function validarUsuario(){
 
   }
 
+}
+
+// creamos una funcion para la barra de navegacion admit
+function navbarAdmitMapa(){
+  swal({
+    title: "Mapa!",
+    text: "En esta sección podras ver las zonas donde hay mas gente vacunada de una vacuna en específico.",
+    icon: "info",
+    button: "Ok",
+  });
 }
