@@ -86,7 +86,7 @@ function navbarAdmitMapa(){
 function navbarAdmitIndice(){
   swal({
     title: "ADMINISTRADOR",
-    text: "Como administrador podras hacer un seguimiento mucho mas preciso acerca de los sintomas mas comunes despues de las diferentes vacunas, el rango de edad de las personas ya vacunadas y un mapa donde se mostraran las zonas donde se encuentran mas personas vacunadas en la ciudad de Medellin.",
+    text: "Como administrador podras hacer un seguimiento mucho mas preciso acerca de los sintomas mas comunes despues de las diferentes vacunas, el rango de edad de las personas ya vacunadas y podras consultar un mapa donde se mostraran las zonas donde se encuentran mas personas vacunadas en la ciudad de Medellin.",
     icon: "info",
     button: "Ok",
   });
