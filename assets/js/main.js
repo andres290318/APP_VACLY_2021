@@ -73,11 +73,20 @@ function validarUsuario(){
 
 }
 
-// creamos una funcion para la barra de navegacion admit
+// creamos una funcion para la barra de navegacion admitmapa
 function navbarAdmitMapa(){
   swal({
     title: "Mapa!",
     text: "En esta sección podras ver las zonas donde hay mas gente vacunada de una vacuna en específico.",
+    icon: "info",
+    button: "Ok",
+  });
+}
+// creamos una funcion para la barra de navegacion del indice del admit
+function navbarAdmitIndice(){
+  swal({
+    title: "ADMINISTRADOR",
+    text: "Como administrador podras hacer un seguimiento mucho mas preciso acerca de los sintomas mas comunes despues de las diferentes vacunas, el rango de edad de las personas ya vacunadas y un mapa donde se mostraran las zonas donde se encuentran mas personas vacunadas en la ciudad de Medellin.",
     icon: "info",
     button: "Ok",
   });
