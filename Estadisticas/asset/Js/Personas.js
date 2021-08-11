@@ -64,8 +64,8 @@ function calcular_y_poner_barras(){
     //coloco el porcentaje en los p que estan en cada barra
     Number_indicador1.textContent= `${parseInt((bonepain/totalusers)*100)}%`;
     Number_indicador2.textContent= `${parseInt((headache/totalusers)*100)}%`;
-    Number_indicador3.textContent= `${parseInt((bonepain/totalusers)*100)}%`;
-    Number_indicador4.textContent= `${parseInt((headache/totalusers)*100)}%`;
+    Number_indicador3.textContent= `${parseInt((malestar/totalusers)*100)}%`;
+    Number_indicador4.textContent= `${parseInt((insomia/totalusers)*100)}%`;
    
 }
 calcular_y_poner_barras();

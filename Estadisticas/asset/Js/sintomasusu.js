@@ -25,26 +25,17 @@ var Contador=0;
 var btn=document.getElementById("btn-menu");
 //elementos del documento
 var title=document.getElementById("title");
-var cajadetexto=document.getElementById("cajadetexto");
-var img=document.getElementById("img");
 var select=document.getElementById("select-vaccine");
-var hr=document.getElementById("hr");
 
 btn.addEventListener("click",()=>{
     if(select.style.opacity=="0.5"){
         title.style.opacity="100%";
         master_container.style.opacity="100%";
-        cajadetexto.style.opacity="100%";
-        img.style.opacity="100%";
         select.style.opacity="100%";
-        hr.style.opacity="100%"
     }else{
         title.style.opacity="50%";
         master_container.style.opacity="50%";
-        cajadetexto.style.opacity="50%";
-        img.style.opacity="50%";
         select.style.opacity="50%";
-        hr.style.opacity="50%"
     }
 })
 function calcular_y_poner_barras(){
@@ -64,8 +55,8 @@ function calcular_y_poner_barras(){
     //coloco el porcentaje en los p que estan en cada barra
     Number_indicador1.textContent= `${parseInt((bonepain/totalusers)*100)}%`;
     Number_indicador2.textContent= `${parseInt((headache/totalusers)*100)}%`;
-    Number_indicador3.textContent= `${parseInt((bonepain/totalusers)*100)}%`;
-    Number_indicador4.textContent= `${parseInt((headache/totalusers)*100)}%`;
+    Number_indicador3.textContent= `${parseInt((malestar/totalusers)*100)}%`;
+    Number_indicador4.textContent= `${parseInt((insomia/totalusers)*100)}%`;
    
 }
 calcular_y_poner_barras();

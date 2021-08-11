@@ -5,7 +5,7 @@
 }
 .calendario{
     width: 270px;
-    height: 250px;
+    height: 205px;
 }
 .month{
     height: 40%;
@@ -41,4 +41,13 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 5px;
+}
+.calendario_ultimos_dias{
+    opacity: 50%;
+}
+.primer_indicador{
+    background-color: aqua;
+}
+.segundo_indicador{
+    background-color: rgb(68, 0, 255);
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="asset/Css/Sintomas.css">
     <link rel="Icon" href="asset/Img/Icon Sintomas.png">
     <link rel="stylesheet" href="asset/Css/estilos_navbar.css">
+    <link rel="stylesheet" href="asset/Css/calenadario.css">
     <title>Sintomas mas Comunes</title>
 </head>
 <body id="background">
@@ -42,6 +43,7 @@
                 </div>
             </div>
                 
+                
             </ul>
         </nav>
     </header>
@@ -49,7 +51,7 @@
 <br>
     <div id="title">
             <img src="asset/Img/Icon Sintomas.png" alt="Sintomas" id="Icon">
-            Personas Vacunadas
+            Sintomas mas Comunes
          <!-- <p id="Number-indicador#0"></p> -->
     </div>
     <br>
@@ -83,19 +85,38 @@
         </div>
     </div>
     <hr id="hr">
-    <br>
-        <div id="cajadetexto">
-            <input type="text" id="text" placeholder="YYYY-MM-DD">
+    <div id="cajadetexto">
+        <input type="text" id="text" placeholder="YYYY-MM-DD">
+    </div>
+    <div class="calendario" id="img">
+        <header>
+            <div class="month">
+                <div class="prev">
+                    <i class="fas fa-angle-left" id="prev" ></i>
+                </div>
+                <h1 id="mes"></h1>
+                <div class="year" id="year"></div>
+                <div class="next">
+                    <i class="fas fa-angle-right" id="next"></i>
+                </div>  
+        </header>
+        <div class="days" id="days">
+            <div class="calendario_day ">lun</div>
+            <div class="calendario_day " >mar</div>
+            <div class="calendario_day ">mir</div>
+            <div class="calendario_day ">jue</div>
+            <div class="calendario_day ">vie</div>
+            <div class="calendario_day ">sab</div>
+            <div class="calendario_day ">dom</div>
         </div>
-        <div class="calendario" id="img">
-            <img src="asset/Img/Calendario.png" alt="" width="250px" height="250px" id="img">
-        </div>
-        <br>
+        <div id="dia_del_calendario" class="dia_del_calendario"></div>
+    </div>
         <div id="select-vaccine">
             <button id="right-2"><i class="fas fa-angle-left"></i></button>
             <div id="monitor-2"><p id="sub_monitor_2">Selecciona la vacuna</p></div>
             <button id="left-2"><i class="fas fa-angle-right"></i></button>
-        </div> 
+        </div>
+        <script src="asset/Js/calendario.js"></script> 
         <script src="https://kit.fontawesome.com/9dbdcbb288.js" crossorigin="anonymous"></script>
         <script src="asset/Js/Sintomas.js"></script>    
 </body>
